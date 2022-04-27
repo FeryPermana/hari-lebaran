@@ -1,0 +1,75 @@
+body {
+    background-image: url('background.jpg');
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p{
+    font-size: 3vw;
+    background-color: black;
+    padding: 4px;
+    border-radius: 20px;;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.text-animate {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 1.0s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.image-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.text-center {
+    width: max-content;
+    margin: 40px auto 0 auto;
+    text-shadow: 2px 2px black;
+}
+
+.next {
+    background-color: black;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
